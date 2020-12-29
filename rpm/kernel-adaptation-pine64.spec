@@ -13,7 +13,7 @@
 %define device_target_cpu armv7hl
 
 # Defconfig to pick-up
-%define defconfig config-postmarketos-allwinner.aarch64
+%define defconfig defconfig-sailfishos-allwinner.aarch64
 
 # Linux kernel source directory
 %define source_directory linux/
