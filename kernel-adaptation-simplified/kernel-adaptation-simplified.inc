@@ -62,6 +62,7 @@ BuildRequires:  bc
 %if 0%{?crossbuild:1}
 BuildRequires:  cross-%{crossbuild}-gcc
 BuildRequires:  cross-%{crossbuild}-binutils
+BuildRequires:  cross-%{crossbuild}-as
 %endif
 
 %description
