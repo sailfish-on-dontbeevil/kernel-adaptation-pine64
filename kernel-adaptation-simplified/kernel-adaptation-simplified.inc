@@ -91,8 +91,9 @@ defconfig_name=$(basename %{defconfig})
 
 %if 0%{?apply_patches:1}
 #Apply any patches
+pwd
+ls -lh ../
 ls -lh
-ls -lh tmp
 sh apply-patches.sh %{source_directory}
 %endif
 
