@@ -24,6 +24,9 @@
 # Build Image
 %define build_Image 1
 
+# Apply Patches
+%define apply_patches 1
+
 # Build uImage
 ##define build_uImage 1
 

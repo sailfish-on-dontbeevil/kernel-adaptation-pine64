@@ -89,8 +89,10 @@ export PATH=/opt/cross/bin/:$PATH
 defconfig_name=$(basename %{defconfig})
 [ -e "./%{defconfig}" ] && cp -f ./%{defconfig} %{source_directory}/arch/%{kernel_arch}/configs/$defconfig_name
 
+%if 0%{?apply_patches:1}
 #Apply any patches
-sh kernel-adaptation-simplfied/apply-patches.sh %{source_directory}
+sh apply-patches.sh %{source_directory}
+%endif
 
 make -C %{source_directory} clean
 make -C %{source_directory} defconfig KBUILD_DEFCONFIG=$defconfig_name
