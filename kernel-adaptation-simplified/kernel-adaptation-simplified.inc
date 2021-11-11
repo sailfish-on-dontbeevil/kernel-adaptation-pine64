@@ -94,6 +94,9 @@ defconfig_name=$(basename %{defconfig})
 pwd
 ls -lh ../
 ls -lh
+ls -lh kernel-adaptation-simplified/
+ls -lh linux/
+
 sh apply-patches.sh %{source_directory}
 %endif
 
