@@ -49,6 +49,7 @@ Version:        2.6
 Release:        1
 Provides:       kernel
 Source:         %{name}-%{version}.tar.bz2
+Source1:        apply-patches.sh
 Requires(pre):  kmod >= 9
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:  pkgconfig(openssl)
