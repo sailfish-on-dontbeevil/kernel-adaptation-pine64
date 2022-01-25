@@ -13,7 +13,7 @@
 %define device_target_cpu aarch64
 
 # Defconfig to pick-up
-%define defconfig config-postmarketos-allwinner.aarch64
+%define defconfig config-sailfishos-rockchip.aarch64
 
 # Linux kernel source directory
 %define source_directory linux/
@@ -34,6 +34,6 @@
 ##define build_zImage 1
 
 # Build and pick-up the following devicetrees
-%define devicetrees allwinner/sun50i-a64-pinephone-1.0.dtb allwinner/sun50i-a64-pinephone-1.1.dtb allwinner/sun50i-a64-pinephone-1.2.dtb allwinner/sun50i-a64-pinetab.dtb allwinner/sun50i-a64-pinetab-dev.dtb
+%define devicetrees rockchip/rk3399-pinephone-pro.dtb
 
 %include kernel-adaptation-simplified/kernel-adaptation-simplified.inc
