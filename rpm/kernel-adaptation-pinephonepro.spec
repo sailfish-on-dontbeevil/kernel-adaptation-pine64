@@ -1,5 +1,5 @@
 # Device details
-%define device pine64
+%define device pinephonepro
 
 # Kernel target architecture
 %define kernel_arch arm64
