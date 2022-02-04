@@ -13,7 +13,7 @@
 %define device_target_cpu aarch64
 
 # Defconfig to pick-up
-%define defconfig config-pinephonepro-megi.aarch64
+%define defconfig config-sailfishos-rockchip.aarch64
 
 # Linux kernel source directory
 %define source_directory linux/
