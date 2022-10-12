@@ -34,6 +34,6 @@
 ##define build_zImage 1
 
 # Build and pick-up the following devicetrees
-%define devicetrees allwinner/sun50i-a64-pinephone-1.0.dtb allwinner/sun50i-a64-pinephone-1.1.dtb allwinner/sun50i-a64-pinephone-1.2.dtb allwinner/sun50i-a64-pinetab.dtb allwinner/sun50i-a64-pinetab-dev.dtb
+%define devicetrees allwinner/sun50i-a64-pinephone-1.0.dtb allwinner/sun50i-a64-pinephone-1.1.dtb allwinner/sun50i-a64-pinephone-1.2.dtb allwinner/sun50i-a64-pinetab.dtb
 
 %include kernel-adaptation-simplified/kernel-adaptation-simplified.inc
