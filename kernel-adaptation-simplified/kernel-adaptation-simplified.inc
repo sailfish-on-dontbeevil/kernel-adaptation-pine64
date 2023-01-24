@@ -90,11 +90,11 @@ defconfig_name=$(basename %{defconfig})
 
 %if 0%{?apply_patches:1}
 #Apply any patches
-sh patches/apply-patches.sh %{source_directory}
+#sh patches/apply-patches.sh %{source_directory}
 %endif
 
-make -C %{source_directory} clean
-make -C %{source_directory} defconfig KBUILD_DEFCONFIG=$defconfig_name
+#make -C %{source_directory} clean
+#make -C %{source_directory} defconfig KBUILD_DEFCONFIG=$defconfig_name
 
 %if %{build_Image}
 make -C %{source_directory} -j$(nproc) Image
